@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoalGetter 2.0 - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <svg width="40" height="40" viewBox="0 0 40 40">
+                    <circle cx="20" cy="20" r="18" fill="none" stroke="white" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="12" fill="none" stroke="white" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="6" fill="none" stroke="white" stroke-width="2"/>
+                    <circle cx="20" cy="20" r="2" fill="white"/>
+                </svg>
+            </div>
+            <div class="header-title">
+                <h1>GoalGetter 2.0</h1>
+                <p id="welcomeMessage">Welcome, John Alcaraz!</p>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="btn-icon" id="themeToggle">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+            </button>
+            <button class="btn-primary">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                New Goal
+            </button>
+            <button class="btn-logout">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                    <polyline points="16 17 21 12 16 7"></polyline>
+                    <line x1="21" y1="12" x2="9" y2="12"></line>
+                </svg>
+                Logout
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon orange">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2C12 2 9 4 9 8C9 10 10 12 12 13C14 12 15 10 15 8C15 4 12 2 12 2Z"></path>
+                        <path d="M12 13C10 14 8 16 8 19C8 21 10 22 12 22C14 22 16 21 16 19C16 16 14 14 12 13Z"></path>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Day Streak</h3>
+                    <p class="stat-number">1</p>
+                    <p class="stat-subtitle">Keep it going!</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon yellow">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                        <path d="M4 22h16"></path>
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Total Points</h3>
+                    <p class="stat-number">0</p>
+                    <p class="stat-subtitle">0/5 achievements</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Completed</h3>
+                    <p class="stat-number">0</p>
+                    <p class="stat-subtitle">0 active</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <div class="stat-content">
+                    <h3>Overall Progress</h3>
+                    <p class="stat-number">0%</p>
+                    <p class="stat-subtitle">0 total goals</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab active">Active (0)</button>
+            <button class="tab">Completed (0)</button>
+            <button class="tab">Achievements</button>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="achievements-section" id="achievementsSection" style="display: none;">
+            <div class="achievements-header">
+                <div>
+                    <h2>Your Achievements</h2>
+                    <p class="achievements-subtitle">Unlock achievements by completing goals and maintaining streaks</p>
+                </div>
+                <div class="achievements-progress">
+                    <span class="achievements-count" id="achievementsCount">0 / 5</span>
+                </div>
+            </div>
+
+            <div class="achievements-grid" id="achievementsGrid">
+                <!-- Achievements will be rendered here -->
+            </div>
+        </div>
+
+        <!-- Journey Progress Section -->
+        <div class="journey-section" id="journeySection" style="display: none;">
+            <div class="journey-header">
+                <h3>Your Journey</h3>
+                <span class="journey-percentage" id="journeyPercentage">0%</span>
+            </div>
+            <div class="journey-progress-bar">
+                <div class="journey-progress-fill" id="journeyProgressFill"></div>
+            </div>
+            <p class="journey-text" id="journeyText">0 of 0 goals completed</p>
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="emptyState">
+            <div class="empty-icon">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
+                    <circle cx="60" cy="60" r="54" stroke="#9ca3af" stroke-width="4"/>
+                    <circle cx="60" cy="60" r="36" stroke="#9ca3af" stroke-width="4"/>
+                    <circle cx="60" cy="60" r="18" stroke="#9ca3af" stroke-width="4"/>
+                    <circle cx="60" cy="60" r="6" fill="#9ca3af"/>
+                </svg>
+            </div>
+            <h2>No active goals yet</h2>
+            <p>Start your journey by creating your first goal!</p>
+        </div>
+
+        <!-- Goals Container -->
+        <div class="goals-container" id="goalsContainer" style="display: none;">
+            <!-- Goals will be dynamically added here -->
+        </div>
+
+        <!-- Create Goal Button -->
+        <button class="btn-create-goal">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+            Create Your First Goal
+        </button>
+    </main>
+
+    <!-- Create Goal Modal -->
+    <div class="modal" id="goalModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2>Create New Goal</h2>
+                    <p class="modal-subtitle">Set a new goal and track your progress towards achieving it.</p>
+                </div>
+                <button class="btn-close" id="closeModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="createGoalForm">
+                <div class="form-group">
+                    <label for="goalTitle">Goal Title</label>
+                    <input type="text" id="goalTitle" placeholder="e.g., Run 100 kilometers" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="goalDescription">Description</label>
+                    <textarea id="goalDescription" rows="3" placeholder="Why is this goal important to you?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="goalCategory">Category</label>
+                    <select id="goalCategory">
+                        <option value="personal">✨ Personal</option>
+                        <option value="fitness">💪 Fitness</option>
+                        <option value="career">💼 Career</option>
+                        <option value="learning">📚 Learning</option>
+                        <option value="finance">💰 Finance</option>
+                        <option value="health">🏥 Health</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="targetValue">Target Value</label>
+                        <input type="number" id="targetValue" placeholder="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="targetUnit">Unit</label>
+                        <input type="text" id="targetUnit" placeholder="km" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="deadline">Deadline</label>
+                    <input type="date" id="deadline" required>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" id="cancelBtn">Cancel</button>
+                    <button type="submit" class="btn-submit">Create Goal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+        <!-- Update Progress Modal -->
+    <div class="modal" id="updateProgressModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2>Update Progress</h2>
+                    <p class="modal-subtitle" id="updateProgressSubtitle">Update your progress for "Goal Title"</p>
+                </div>
+                <button class="btn-close" id="closeUpdateModal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <form id="updateProgressForm">
+                <div class="form-group">
+                    <label for="currentValueInput">Current Value (<span id="unitLabel">hrs</span>)</label>
+                    <input type="number" id="currentValueInput" step="0.01" required>
+                    <p class="form-hint" id="targetHint">Target: 10 hrs</p>
+                </div>
+
+                <div class="modal-actions">
+                    <button type="button" class="btn-cancel" id="cancelUpdateBtn">Cancel</button>
+                    <button type="submit" class="btn-submit">Update</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Chat Interface -->
+    <div class="chat-container" id="chatContainer">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="chat-avatar">🤖</div>
+                <div>
+                    <h3>GoalGetter AI Assistant</h3>
+                    <p class="chat-status">Online</p>
+                </div>
+            </div>
+            <button class="btn-close-chat" id="closeChatBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <div class="chat-message bot">
+                <div class="message-avatar">🤖</div>
+                <div class="message-content">
+                    <p>Hi there! 👋 I'm your GoalGetter AI assistant. How can I help you achieve your goals today?</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <input type="text" id="chatInput" class="chat-input" placeholder="Ask me anything about your goals...">
+            <button class="btn-send" id="sendMessageBtn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Help Button (Left Side) -->
+    <button class="btn-help">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <script>
+    // Initialize data storage
+    let goals = [];
+    let currentTab = 'active';
+
+    // Check if user is logged in
+    window.addEventListener('DOMContentLoaded', function() {
+        const isLoggedIn = localStorage.getItem('isLoggedIn');
+        const userName = localStorage.getItem('userName') || 'User';
+        
+        if (!isLoggedIn) {
+            window.location.href = 'login.html';
+        } else {
+            document.getElementById('welcomeMessage').textContent = `Welcome, ${userName}!`;
+            loadGoals();
+            loadAchievements();
+            renderGoals();
+            updateStats();
+            checkAchievements();
+        }
+    });
+
+    // Load goals from localStorage
+    function loadGoals() {
+        const savedGoals = localStorage.getItem('goals');
+        if (savedGoals) {
+            goals = JSON.parse(savedGoals);
+        }
+    }
+
+    // Achievement definitions
+    const achievementsList = [
+        {
+            id: 'first-step',
+            name: 'First Step',
+            description: 'Create your first goal',
+            icon: '🎯',
+            unlocked: false,
+            unlockedDate: null,
+            checkUnlock: () => goals.length >= 1
+        },
+        {
+            id: 'goal-crusher',
+            name: 'Goal Crusher',
+            description: 'Complete your first goal',
+            icon: '🏆',
+            unlocked: false,
+            unlockedDate: null,
+            checkUnlock: () => goals.filter(g => g.completed).length >= 1
+        },
+        {
+            id: 'on-fire',
+            name: 'On Fire',
+            description: 'Maintain a 7-day streak',
+            icon: '🔥',
+            unlocked: false,
+            unlockedDate: null,
+            checkUnlock: () => {
+                const streak = parseInt(document.querySelector('.stats-grid .stat-card:nth-child(1) .stat-number').textContent);
+                return streak >= 7;
+            }
+        },
+        {
+            id: 'overachiever',
+            name: 'Overachiever',
+            description: 'Complete 5 goals',
+            icon: '🏅',
+            unlocked: false,
+            unlockedDate: null,
+            checkUnlock: () => goals.filter(g => g.completed).length >= 5
+        },
+        {
+            id: 'dedicated',
+            name: 'Dedicated',
+            description: 'Update progress 10 times',
+            icon: '💪',
+            unlocked: false,
+            unlockedDate: null,
+            checkUnlock: () => {
+                const updateCount = parseInt(localStorage.getItem('progressUpdateCount') || '0');
+                return updateCount >= 10;
+            }
+        }
+    ];
+
+    // Load achievements from localStorage
+    function loadAchievements() {
+        const savedAchievements = localStorage.getItem('achievements');
+        if (savedAchievements) {
+            const saved = JSON.parse(savedAchievements);
+            achievementsList.forEach(achievement => {
+                const savedAchievement = saved.find(a => a.id === achievement.id);
+                if (savedAchievement) {
+                    achievement.unlocked = savedAchievement.unlocked;
+                    achievement.unlockedDate = savedAchievement.unlockedDate;
+                }
+            });
+        }
+    }
+
+    // Save achievements
+    function saveAchievements() {
+        localStorage.setItem('achievements', JSON.stringify(achievementsList));
+    }
+
+    // Check and unlock achievements
+    function checkAchievements() {
+        let newUnlocks = [];
+        
+        achievementsList.forEach(achievement => {
+            if (!achievement.unlocked && achievement.checkUnlock()) {
+                achievement.unlocked = true;
+                achievement.unlockedDate = new Date().toLocaleDateString('en-US', { 
+                    month: '2-digit', 
+                    day: '2-digit', 
+                    year: 'numeric' 
+                });
+                newUnlocks.push(achievement.name);
+            }
+        });
+        
+        if (newUnlocks.length > 0) {
+            saveAchievements();
+            alert(`🎉 Achievement Unlocked: ${newUnlocks.join(', ')}!`);
+        }
+        
+        updateAchievementsCount();
+    }
+
+    // Render achievements
+    function renderAchievements() {
+        const achievementsGrid = document.getElementById('achievementsGrid');
+        
+        if (!achievementsGrid) {
+            console.error('Achievements grid not found!');
+            return;
+        }
+        
+        achievementsGrid.innerHTML = achievementsList.map(achievement => `
+            <div class="achievement-card ${achievement.unlocked ? 'unlocked' : 'locked'}">
+                <div class="achievement-content">
+                    <div class="achievement-icon">${achievement.icon}</div>
+                    <div class="achievement-info">
+                        <h3 class="achievement-name">${achievement.name}</h3>
+                        <p class="achievement-description">${achievement.description}</p>
+                        ${achievement.unlocked ? `<p class="achievement-unlocked-date">Unlocked ${achievement.unlockedDate}</p>` : ''}
+                    </div>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    // Update achievements count
+    function updateAchievementsCount() {
+        const unlockedCount = achievementsList.filter(a => a.unlocked).length;
+        const totalCount = achievementsList.length;
+        const countElement = document.getElementById('achievementsCount');
+        
+        if (countElement) {
+            countElement.textContent = `${unlockedCount} / ${totalCount}`;
+        }
+        
+        // Update stat card
+        const pointsCard = document.querySelector('.stats-grid .stat-card:nth-child(2) .stat-number');
+        const achievementsSubtitle = document.querySelector('.stats-grid .stat-card:nth-child(2) .stat-subtitle');
+        
+        if (pointsCard) {
+            pointsCard.textContent = unlockedCount * 20 + 10;
+        }
+        if (achievementsSubtitle) {
+            achievementsSubtitle.textContent = `${unlockedCount}/${totalCount} achievements`;
+        }
+    }
+    function saveGoals() {
+        localStorage.setItem('goals', JSON.stringify(goals));
+    }
+
+    // Get category icon
+    function getCategoryIcon(category) {
+        const icons = {
+            personal: '✨',
+            fitness: '💪',
+            career: '💼',
+            learning: '📚',
+            finance: '💰',
+            health: '🏥'
+        };
+        return icons[category] || '✨';
+    }
+
+    // Calculate days left
+    function calculateDaysLeft(deadline) {
+        const today = new Date();
+        const deadlineDate = new Date(deadline);
+        const diffTime = deadlineDate - today;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return diffDays;
+    }
+
+    // Render goals
+    function renderGoals() {
+        const goalsContainer = document.getElementById('goalsContainer');
+        const emptyState = document.getElementById('emptyState');
+        const journeySection = document.getElementById('journeySection');
+        
+        const filteredGoals = goals.filter(goal => {
+            if (currentTab === 'active') return !goal.completed;
+            if (currentTab === 'completed') return goal.completed;
+            return false;
+        });
+
+        // Update tab counts
+        const activeCount = goals.filter(g => !g.completed).length;
+        const completedCount = goals.filter(g => g.completed).length;
+        document.querySelectorAll('.tab')[0].textContent = `Active (${activeCount})`;
+        document.querySelectorAll('.tab')[1].textContent = `Completed (${completedCount})`;
+
+        if (filteredGoals.length === 0) {
+            emptyState.style.display = 'block';
+            goalsContainer.style.display = 'none';
+            if (goals.length > 0) {
+                journeySection.style.display = 'block';
+            } else {
+                journeySection.style.display = 'none';
+            }
+        } else {
+            emptyState.style.display = 'none';
+            goalsContainer.style.display = 'grid';
+            journeySection.style.display = 'block';
+            
+            goalsContainer.innerHTML = filteredGoals.map(goal => {
+                const progress = Math.min((goal.currentValue / goal.targetValue) * 100, 100);
+                const daysLeft = calculateDaysLeft(goal.deadline);
+                const categoryIcon = getCategoryIcon(goal.category);
+                
+                return `
+                    <div class="goal-card ${goal.completed ? 'completed' : ''}">
+                        <div class="goal-header">
+                            <div class="goal-category">
+                                <span class="category-icon">${categoryIcon}</span>
+                                <span class="category-name">${goal.category.charAt(0).toUpperCase() + goal.category.slice(1)}</span>
+                            </div>
+                            <button class="btn-delete" onclick="deleteGoal('${goal.id}')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polyline points="3 6 5 6 21 6"></polyline>
+                                    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <h2 class="goal-title">${goal.title}</h2>
+                        ${goal.description ? `<p class="goal-description">${goal.description}</p>` : ''}
+                        
+                        <div class="goal-progress-section">
+                            <div class="progress-label">
+                                <span>Progress</span>
+                                <span>${Math.round(progress)}%</span>
+                            </div>
+                            <div class="goal-progress-bar">
+                                <div class="goal-progress-fill" style="width: ${progress}%"></div>
+                            </div>
+                            <p class="progress-text">${goal.currentValue} / ${goal.targetValue} ${goal.unit}</p>
+                            <p class="progress-text">${Math.round(progress)}% complete</p>
+                        </div>
+                        
+                        <div class="goal-footer">
+                            <span class="days-left">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                ${daysLeft > 0 ? `${daysLeft} days left` : daysLeft === 0 ? 'Due today' : 'Overdue'}
+                            </span>
+                        </div>
+                        
+                        ${goal.completed ? `
+                            <div class="goal-completed-badge">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                    <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                </svg>
+                                Goal Completed! 🎉
+                            </div>
+                        ` : `
+                            <button class="btn-update-progress" onclick="updateProgress('${goal.id}')">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                                Update Progress
+                            </button>
+                        `}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        updateJourneyProgress();
+    }
+
+    // Update statistics
+    function updateStats() {
+        const completedGoals = goals.filter(g => g.completed).length;
+        const activeGoals = goals.filter(g => !g.completed).length;
+        const totalGoals = goals.length;
+        const overallProgress = totalGoals > 0 ? Math.round((completedGoals / totalGoals) * 100) : 0;
+
+        // Update stat cards
+        document.querySelector('.stats-grid .stat-card:nth-child(3) .stat-number').textContent = completedGoals;
+        document.querySelector('.stats-grid .stat-card:nth-child(3) .stat-subtitle').textContent = `${activeGoals} active`;
+        document.querySelector('.stats-grid .stat-card:nth-child(4) .stat-number').textContent = `${overallProgress}%`;
+        document.querySelector('.stats-grid .stat-card:nth-child(4) .stat-subtitle').textContent = `${totalGoals} total goals`;
+    }
+
+    // Update journey progress
+    function updateJourneyProgress() {
+        const completedGoals = goals.filter(g => g.completed).length;
+        const totalGoals = goals.length;
+        const percentage = totalGoals > 0 ? Math.round((completedGoals / totalGoals) * 100) : 0;
+
+        document.getElementById('journeyPercentage').textContent = `${percentage}%`;
+        document.getElementById('journeyProgressFill').style.width = `${percentage}%`;
+        document.getElementById('journeyText').textContent = `${completedGoals} of ${totalGoals} goals completed`;
+    }
+
+    // Delete goal
+    function deleteGoal(id) {
+        if (confirm('Are you sure you want to delete this goal?')) {
+            goals = goals.filter(goal => goal.id !== id);
+            saveGoals();
+            renderGoals();
+            updateStats();
+        }
+    }
+
+        // Update progress
+    let currentGoalId = null;
+
+    function updateProgress(id) {
+        const goal = goals.find(g => g.id === id);
+        if (!goal) return;
+
+        currentGoalId = id;
+        
+        // Update modal content
+        document.getElementById('updateProgressSubtitle').textContent = `Update your progress for "${goal.title}"`;
+        document.getElementById('currentValueInput').value = goal.currentValue;
+        document.getElementById('unitLabel').textContent = goal.unit;
+        document.getElementById('targetHint').textContent = `Target: ${goal.targetValue} ${goal.unit}`;
+        
+        // Show modal
+        document.getElementById('updateProgressModal').classList.add('show');
+    }
+
+    // Close update progress modal
+    document.getElementById('closeUpdateModal').addEventListener('click', function() {
+        document.getElementById('updateProgressModal').classList.remove('show');
+        currentGoalId = null;
+    });
+
+    document.getElementById('cancelUpdateBtn').addEventListener('click', function() {
+        document.getElementById('updateProgressModal').classList.remove('show');
+        currentGoalId = null;
+    });
+
+    // Close modal when clicking outside
+    document.getElementById('updateProgressModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+            this.classList.remove('show');
+            currentGoalId = null;
+        }
+    });
+
+    // Handle update progress form submission
+    document.getElementById('updateProgressForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        if (!currentGoalId) return;
+        
+        const goal = goals.find(g => g.id === currentGoalId);
+        if (!goal) return;
+        
+        const newValue = parseFloat(document.getElementById('currentValueInput').value);
+        goal.currentValue = newValue;
+        
+        // Track progress updates for achievements
+        let updateCount = parseInt(localStorage.getItem('progressUpdateCount') || '0');
+        updateCount++;
+        localStorage.setItem('progressUpdateCount', updateCount.toString());
+        
+        // Check if goal is completed
+        if (goal.currentValue >= goal.targetValue) {
+            goal.completed = true;
+            alert('🎉 Congratulations! You completed this goal!');
+        }
+        
+        saveGoals();
+        renderGoals();
+        updateStats();
+        checkAchievements(); // Check for new achievements
+        
+        // Close modal
+        document.getElementById('updateProgressModal').classList.remove('show');
+        currentGoalId = null;
+    });
+
+    // Modal functionality
+    const modal = document.getElementById('goalModal');
+    const newGoalBtn = document.querySelector('.btn-primary');
+    const createGoalBtn = document.querySelector('.btn-create-goal');
+    const closeModal = document.getElementById('closeModal');
+    const cancelBtn = document.getElementById('cancelBtn');
+
+    function openModal() {
+        modal.classList.add('show');
+    }
+
+    function closeModalFunc() {
+        modal.classList.remove('show');
+    }
+
+    if (newGoalBtn) {
+        newGoalBtn.addEventListener('click', openModal);
+    }
+
+    if (createGoalBtn) {
+        createGoalBtn.addEventListener('click', openModal);
+    }
+
+    if (closeModal) {
+        closeModal.addEventListener('click', closeModalFunc);
+    }
+
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', closeModalFunc);
+    }
+
+    modal.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModalFunc();
+        }
+    });
+
+    // Handle form submission
+    document.getElementById('createGoalForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const newGoal = {
+            id: Date.now().toString(),
+            title: document.getElementById('goalTitle').value,
+            description: document.getElementById('goalDescription').value,
+            category: document.getElementById('goalCategory').value,
+            targetValue: parseFloat(document.getElementById('targetValue').value),
+            currentValue: 0,
+            unit: document.getElementById('targetUnit').value,
+            deadline: document.getElementById('deadline').value,
+            completed: false,
+            createdAt: new Date().toISOString()
+        };
+        
+        goals.push(newGoal);
+        saveGoals();
+        renderGoals();
+        updateStats();
+        checkAchievements(); // Check for new achievements
+        
+        closeModalFunc();
+        this.reset();
+        
+        alert('Goal created successfully! 🎯');
+    });
+
+    // Logout functionality
+    document.querySelector('.btn-logout').addEventListener('click', function() {
+        if (confirm('Are you sure you want to logout?')) {
+            localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('userName');
+            localStorage.removeItem('userEmail');
+            window.location.href = 'login.html';
+        }
+    });
+
+    // Theme toggle
+    document.getElementById('themeToggle').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
+    });
+
+    // Load saved theme preference
+    if (localStorage.getItem('darkMode') === 'true') {
+        document.body.classList.add('dark-mode');
+    }
+
+        // Tab switching
+    // Tab switching
+    document.querySelectorAll('.tab').forEach((tab, index) => {
+        tab.addEventListener('click', function() {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            this.classList.add('active');
+            
+            const journeySection = document.getElementById('journeySection');
+            const emptyState = document.getElementById('emptyState');
+            const goalsContainer = document.getElementById('goalsContainer');
+            const achievementsSection = document.getElementById('achievementsSection');
+            const createGoalBtn = document.querySelector('.btn-create-goal');
+            
+            // Hide everything first
+            journeySection.style.display = 'none';
+            emptyState.style.display = 'none';
+            goalsContainer.style.display = 'none';
+            achievementsSection.style.display = 'none';
+            
+            if (index === 0) {
+                // Active tab
+                currentTab = 'active';
+                if (goals.length > 0) {
+                    journeySection.style.display = 'block';
+                }
+                createGoalBtn.style.display = 'flex';
+                renderGoals();
+            } else if (index === 1) {
+                // Completed tab
+                currentTab = 'completed';
+                if (goals.length > 0) {
+                    journeySection.style.display = 'block';
+                }
+                createGoalBtn.style.display = 'flex';
+                renderGoals();
+            } else if (index === 2) {
+                // Achievements tab
+                currentTab = 'achievements';
+                achievementsSection.style.display = 'block';
+                createGoalBtn.style.display = 'none';
+                renderAchievements();
+            }
+        });
+    });
+
+        // Chat functionality
+    const chatContainer = document.getElementById('chatContainer');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatInput = document.getElementById('chatInput');
+    const sendMessageBtn = document.getElementById('sendMessageBtn');
+    const helpBtn = document.querySelector('.btn-help');
+    const closeChatBtn = document.getElementById('closeChatBtn');
+
+    // Toggle chat
+    helpBtn.addEventListener('click', function() {
+        chatContainer.classList.toggle('show');
+        if (chatContainer.classList.contains('show')) {
+            chatInput.focus();
+        }
+    });
+
+    closeChatBtn.addEventListener('click', function() {
+        chatContainer.classList.remove('show');
+    });
+
+    // Send message
+    function sendMessage() {
+        const message = chatInput.value.trim();
+        if (!message) return;
+        
+        // Add user message
+        addMessage(message, 'user');
+        chatInput.value = '';
+        
+        // Show typing indicator
+        showTypingIndicator();
+        
+        // Simulate AI response after delay
+        setTimeout(() => {
+            hideTypingIndicator();
+            const response = getAIResponse(message);
+            addMessage(response, 'bot');
+        }, 1000 + Math.random() * 1000);
+    }
+
+    sendMessageBtn.addEventListener('click', sendMessage);
+
+    chatInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            sendMessage();
+        }
+    });
+
+    // Add message to chat
+    function addMessage(text, sender) {
+        const messageDiv = document.createElement('div');
+        messageDiv.className = `chat-message ${sender}`;
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'message-avatar';
+        avatar.textContent = sender === 'user' ? '👤' : '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'message-content';
+        content.innerHTML = `<p>${text}</p>`;
+        
+        messageDiv.appendChild(avatar);
+        messageDiv.appendChild(content);
+        chatMessages.appendChild(messageDiv);
+        
+        // Scroll to bottom
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    // Typing indicator
+    function showTypingIndicator() {
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'chat-message bot';
+        typingDiv.id = 'typingIndicator';
+        
+        const avatar = document.createElement('div');
+        avatar.className = 'message-avatar';
+        avatar.textContent = '🤖';
+        
+        const content = document.createElement('div');
+        content.className = 'message-content';
+        content.innerHTML = `
+            <div class="typing-indicator">
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+                <div class="typing-dot"></div>
+            </div>
+        `;
+        
+        typingDiv.appendChild(avatar);
+        typingDiv.appendChild(content);
+        chatMessages.appendChild(typingDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    function hideTypingIndicator() {
+        const indicator = document.getElementById('typingIndicator');
+        if (indicator) {
+            indicator.remove();
+        }
+    }
+
+    // AI Response logic
+    function getAIResponse(message) {
+        const lowerMessage = message.toLowerCase();
+        
+        // Goal-related responses
+        if (lowerMessage.includes('create') || lowerMessage.includes('new goal') || lowerMessage.includes('add goal')) {
+            return "To create a new goal, click the '+ New Goal' button in the header or the 'Create Your First Goal' button. Fill in the details like title, description, category, target value, and deadline. I can help you set SMART goals! 🎯";
+        }
+        
+        if (lowerMessage.includes('progress') || lowerMessage.includes('update')) {
+            return "You can update your progress by clicking the 'Update Progress' button on any active goal card. Enter your current value, and the system will automatically calculate your progress percentage! 📊";
+        }
+        
+        if (lowerMessage.includes('complete') || lowerMessage.includes('finish')) {
+            return "When you update your progress to reach or exceed your target value, the goal will automatically be marked as completed! You'll also unlock achievements. Keep going! 🎉";
+        }
+        
+        if (lowerMessage.includes('achievement') || lowerMessage.includes('badge')) {
+            return "You can unlock achievements by completing goals, maintaining streaks, and updating progress regularly. Check the 'Achievements' tab to see all available achievements and your progress! 🏆";
+        }
+        
+        if (lowerMessage.includes('delete') || lowerMessage.includes('remove')) {
+            return "To delete a goal, click the trash icon (🗑️) on the goal card. Be careful - this action cannot be undone! Make sure you really want to remove the goal.";
+        }
+        
+        if (lowerMessage.includes('streak')) {
+            return "Your day streak increases when you consistently work on your goals. Keep updating your progress daily to maintain and grow your streak! The longer your streak, the closer you are to unlocking the 'On Fire' achievement! 🔥";
+        }
+        
+        if (lowerMessage.includes('category') || lowerMessage.includes('categories')) {
+            return "GoalGetter has 6 categories: Personal ✨, Fitness 💪, Career 💼, Learning 📚, Finance 💰, and Health 🏥. Choose the category that best fits your goal when creating it!";
+        }
+        
+        if (lowerMessage.includes('dark mode') || lowerMessage.includes('theme')) {
+            return "You can toggle dark mode by clicking the sun/moon icon (☀️) in the header. Your preference will be saved automatically!";
+        }
+        
+        if (lowerMessage.includes('help') || lowerMessage.includes('how')) {
+            return "I'm here to help! You can ask me about creating goals, tracking progress, achievements, categories, or any other feature. What would you like to know? 😊";
+        }
+        
+        if (lowerMessage.includes('thank')) {
+            return "You're welcome! Keep crushing those goals! 💪 Let me know if you need anything else.";
+        }
+        
+        if (lowerMessage.includes('hi') || lowerMessage.includes('hello') || lowerMessage.includes('hey')) {
+            return "Hello! 👋 How can I assist you with your goals today?";
+        }
+        
+        // Default responses
+        const defaultResponses = [
+            "That's a great question! GoalGetter helps you track your goals, monitor progress, and earn achievements. Try creating your first goal to get started! 🎯",
+            "I'm here to help you achieve your goals! You can create goals, track progress, earn achievements, and maintain streaks. What would you like to do?",
+            "Let me help you with that! GoalGetter makes goal tracking easy and fun. You can create goals in different categories, update progress anytime, and unlock achievements! 🚀",
+            "Great to hear from you! Remember, the key to achieving goals is consistent progress. Start by creating a goal and updating it regularly! 💪"
+        ];
+        
+        return defaultResponses[Math.floor(Math.random() * defaultResponses.length)];
+    }
+</script>
+</body>
+</html>
