@@ -6,7 +6,7 @@ _ _ _
 - [🫥 Project Introduction](#-project-introduction)
 - [📝 Project Overview and Features](#-project-overview-and-features)
 - [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack)
-- [🧑‍💻 Getting Started: Setup & Running Instructions](#getting-started-setup--running-instructions)
+- [🧑‍💻 Getting Started: Setup & Running Instructions](#getting-started)
 - [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
 - [🔥 Conclusion and License](#-conclusion-and-license)
 
@@ -121,6 +121,7 @@ None (Static prototype only)
 - Basic HTML/CSS references
 
 _ _ _
+<a name="getting-started"></a>
 ## 🧑‍💻 Getting Started: Setup & Running Instructions
 
 This project is extremely simple to run because it is static—no backend required.
