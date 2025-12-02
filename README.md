@@ -11,7 +11,7 @@ _ _ _
 
 - [🧑‍💻 Getting Started: Setup and Running Instructions](#-getting-started:-setup-&-running-instructions)
 
-- [🤝 How to Contribute and Report Issues](#-how-to-comtribute-and-report-issues)
+- [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
 
 - [🔥 Conclusion and License](#-conclusion-and-license)
 
