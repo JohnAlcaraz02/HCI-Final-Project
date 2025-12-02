@@ -1,10 +1,9 @@
 # 🎯 GoalGetter – HCI Final Project
 
 _ _ _
+## ✍️ Table of Contents
 
-- [✍️ Table of Contents](#-project-description)
-
-🫥 Project Introduction
+- [🫥 Project Introduction](#-project-description)
 
 📝 Project Overview and Features
 
