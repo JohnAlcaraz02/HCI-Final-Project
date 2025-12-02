@@ -6,7 +6,7 @@ _ _ _
 - [🫥 Project Introduction](#-project-introduction)
 - [📝 Project Overview and Features](#-project-overview-and-features)
 - [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack-apis-and-other-resources)
-- [🧑‍💻 Getting Started: Setup and Running Instructions](#getting-started-setup--running-instructions)
+- [🧑‍💻 Getting Started: Setup & Running Instructions](#getting-started-setup--running-instructions)
 - [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
 - [🔥 Conclusion and License](#-conclusion-and-license)
 
@@ -28,7 +28,7 @@ This project reflects modern HCI design values:
 - Consistency
 
 _ _ _
-## 📝 2. Project Overview and Features
+## 📝 Project Overview and Features
 ✔️ Project Overview
 
 GoalGetter focuses on creating a clean, intuitive, and minimalistic interface with two primary pages:
