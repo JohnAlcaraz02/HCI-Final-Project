@@ -7,13 +7,13 @@ _ _ _
 
 - [📝 Project Overview and Features](#-project-overview-and-features)
 
--[⛏️ Tech Stack, APIs, and Other Resources](#-tect-stack,-api,-and-other-resources)
+- [⛏️ Tech Stack, APIs, and Other Resources](#-tect-stack,-apis,-and-other-resources)
 
--[🧑‍💻 Getting Started: Setup and Running Instructions](#-getting-started:-setup-&-running-instruction)
+- [🧑‍💻 Getting Started: Setup and Running Instructions](#-getting-started:-setup-&-running-instructions)
 
--[🤝 How to Contribute and Report Issues](#-how-to-comtribute-and-report-issues)
+- [🤝 How to Contribute and Report Issues](#-how-to-comtribute-and-report-issues)
 
--[🔥 Conclusion and License](#-conclusion-and-license)
+- [🔥 Conclusion and License](#-conclusion-and-license)
 
 _ _ _
 ## 🫥 Project Introduction
