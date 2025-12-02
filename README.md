@@ -1,8 +1,8 @@
-🎯 GoalGetter – HCI Final Project
+# 🎯 GoalGetter – HCI Final Project
 
-A clean, user-centered web interface designed to demonstrate Human–Computer Interaction (HCI) principles through a functional Login Page and Dashboard Interface.
+_ _ _
 
-✍️ Table of Contents
+- [✍️ Table of Contents](#-project-description)
 
 🫥 Project Introduction
 
@@ -16,7 +16,8 @@ A clean, user-centered web interface designed to demonstrate Human–Computer In
 
 🔥 Conclusion and License
 
-🫥 1. Project Introduction
+_ _ _
+## 🫥 Project Introduction
 
 GoalGetter is a high-fidelity HCI prototype created for academic purposes to showcase the application of UI/UX principles, layout techniques, and user-centered design.
 The project simulates a simple system where users can:
