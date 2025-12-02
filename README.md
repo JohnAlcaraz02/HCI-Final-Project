@@ -3,7 +3,7 @@
 _ _ _
 ## ✍️ Table of Contents
 
-- [🫥 Project Introduction](#-project-description)
+- [🫥 Project Introduction](#-project-introduction)
 
 📝 Project Overview and Features
 
