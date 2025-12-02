@@ -4,15 +4,10 @@ _ _ _
 ## ✍️ Table of Contents
 
 - [🫥 Project Introduction](#-project-introduction)
-
 - [📝 Project Overview and Features](#-project-overview-and-features)
-
-- [⛏️ Tech Stack, APIs, and Other Resources](#-tech-stack-apis-and-other-resources)
-
-- [🧑‍💻 Getting Started: Setup and Running Instructions](#-getting-started-setup-running-instructions)
-
+- [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack-apis-and-other-resources)
+- [🧑‍💻 Getting Started: Setup and Running Instructions](#getting-started-setup--running-instructions)
 - [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
-
 - [🔥 Conclusion and License](#-conclusion-and-license)
 
 _ _ _
