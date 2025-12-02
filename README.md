@@ -5,7 +5,7 @@ _ _ _
 
 - [🫥 Project Introduction](#-project-introduction)
 - [📝 Project Overview and Features](#-project-overview-and-features)
-- [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack-apis-and-other-resources)
+- [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack)
 - [🧑‍💻 Getting Started: Setup & Running Instructions](#getting-started-setup--running-instructions)
 - [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
 - [🔥 Conclusion and License](#-conclusion-and-license)
@@ -100,6 +100,7 @@ Offers immediate system feedback
 - Casual mobile users needing a simple interface
 
 _ _ _
+<a name="tech-stack"></a>
 ## ⛏️ Tech Stack, APIs, and Other Resources
 🧩 Tech Stack
 - Layer	Technology
