@@ -7,9 +7,9 @@ _ _ _
 
 - [📝 Project Overview and Features](#-project-overview-and-features)
 
-- [⛏️ Tech Stack, APIs, and Other Resources](#tech-stack-apis-and-other-resources)
+- [⛏️ Tech Stack, APIs, and Other Resources](#-tech-stack-apis-and-other-resources)
 
-- [🧑‍💻 Getting Started: Setup and Running Instructions](#getting-started-setup-running-instructions)
+- [🧑‍💻 Getting Started: Setup and Running Instructions](#-getting-started-setup-running-instructions)
 
 - [🤝 How to Contribute and Report Issues](#-how-to-contribute-and-report-issues)
 
